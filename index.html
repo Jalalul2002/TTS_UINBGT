@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTS UIN BANGET</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            var alert = ()=> {
+                var salah = document.getElementById('salah');
+                
+                salah.innerText = "Salah Brow!!";
+                salah.style.backgroundColor = "rgba(255,0,0,0.7)";
+                salah.style.width = "500px";
+                salah.style.height = "40px";
+                salah.style.borderRadius = "5px";
+                salah.style.margin = "10px auto 0px auto";
+                salah.style.textAlign = "center";
+                salah.style.color = "#FFF5E4";
+                salah.style.padding = "10px";
+            }
+            $('#jawab').click(function(){
+                var soal = $('#soal').val();
+                var jawaban = $('#jawaban').val();
+
+                if (soal == "menurun1") {
+                    if (jawaban == "TAKJIL" || jawaban == "takjil" || jawaban == "Takjil") {
+                        $("#salah").hide();
+                        $(".t1").show();
+                    }else {
+                        alert();
+                        $("#salah").show();
+                    }
+                };
+
+                if (soal == "menurun2") {
+                    if (jawaban == "TADARUS" || jawaban == "tadarus" || jawaban == "Tadarus") {
+                        $("#salah").hide();
+                        $(".t2").show();
+                    }else {
+                        alert();
+                        $("#salah").show();
+                    }
+                };
+
+                if (soal == "menurun3") {
+                    if (jawaban == "EIDALFITR" || jawaban == "eidalfitr" || jawaban == "Eidalfitr") {
+                        $("#salah").hide();
+                        $(".t3").show();
+                    }else {
+                        alert();
+                        $("#salah").show();
+                    }
+                };
+
+                if (soal == "mendatar2") {
+                    if (jawaban == "TARAWEH" || jawaban == "taraweh" || jawaban == "Taraweh") {
+                        $("#salah").hide();
+                        $(".d2").show();
+                    }else {
+                        alert();
+                        $("#salah").show();
+                    }
+                };
+
+                if (soal == "mendatar4") {
+                    if (jawaban == "RAMADAN" || jawaban == "ramadan" || jawaban == "Ramadan") {
+                        $("#salah").hide();
+                        $(".d4").show();
+                    }else {
+                        alert();
+                        $("#salah").show();
+                    }
+                };
+
+                if (soal == "mendatar5") {
+                    if (jawaban == "HAUS" || jawaban == "haus" || jawaban == "Haus") {
+                        $("#salah").hide();
+                        $(".d5").show();
+                    }else {
+                        alert();
+                        $("#salah").show();
+                    }
+                };
+
+                if (soal == "mendatar6") {
+                    if (jawaban == "SAHUR" || jawaban == "sahur" || jawaban == "Sahur") {
+                        $("#salah").hide();
+                        $(".d6").show();
+                    }else {
+                        alert();
+                        $("#salah").show();
+                    }
+                };
+
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="ttsCont">
+            <h2>Teka - teki silang</h2>
+            <p>Mendatar</p>
+            <ul>
+                <li>2. Shalat sunat dibulan ramadhan</li>
+                <li>4. Bulan sebelum syawal</li>
+                <li>5. Tantangan siang hari dibulan ramadhan</li>
+                <li>6. Makan pagi sebelum terbit fajar</li>
+            </ul>
+            <p>Menurun</p>
+            <ul>
+                <li>1. Hidangan berbuka dibulan puasa</li>
+                <li>2. Ngaji Quran</li>
+                <li>3. Hari kemenangan</li>
+            </ul>
+        </div>
+        <div class="ttsCont">
+            <table border="1">
+                <tr>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="">
+                        <p class="num">1</p>
+                        <p class="answer t1" hidden>T</p>
+                    </td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                </tr>
+                <tr>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="">
+                        <p class="num">2</p>
+                        <p class="answer d2 t2" hidden>T</p>
+                    </td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer d2" hidden>A</p>
+                    </td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer d2" hidden>R</p>
+                    </td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer d2 t1" hidden>A</p>
+                    </td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer d2" hidden>W</p>
+                    </td>
+                    <td class="">
+                        <p class="num">3</p>
+                        <p class="answer d2 t3" hidden>E</p>
+                    </td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer d2" hidden>H</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer t2" hidden>A</p>
+                    </td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer t1" hidden>K</p>
+                    </td>
+                    <td class="block"></td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer t3" hidden>I</p>
+                    </td>
+                    <td class="block"></td>
+                </tr>
+                <tr>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer t2" hidden>D</p>
+                    </td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer t1" hidden>J</p>
+                    </td>
+                    <td class="block"></td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer t3" hidden>D</p>
+                    </td>
+                    <td class="block"></td>
+                </tr>
+                <tr>
+                    <td class="">
+                        <p class="num">4</p>
+                        <p class="answer d4" hidden>R</p>
+                    </td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer d4" hidden>A</p>
+                    </td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer d4" hidden>M</p>
+                    </td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer d4" hidden>A</p>
+                    </td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer d4" hidden>D</p>
+                    </td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer d4 t2" hidden>A</p>
+                    </td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer d4" hidden>N</p>
+                    </td>
+                    <td class="block"></td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer t1" hidden>I</p>
+                    </td>
+                    <td class="block"></td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer t3" hidden>A</p>
+                    </td>
+                    <td class="block"></td>
+                </tr>
+                <tr>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer t2" hidden>R</p>
+                    </td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer t1" hidden>L</p>
+                    </td>
+                    <td class="block"></td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer t3" hidden>L</p>
+                    </td>
+                    <td class="block"></td>
+                </tr>
+                <tr>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="">
+                        <p class="num">5</p>
+                        <p class="answer d5" hidden>H</p>
+                    </td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer d5" hidden>A</p>
+                    </td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer d5 t2" hidden>U</p>
+                    </td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer d5" hidden>S</p>
+                    </td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer t3" hidden>F</p>
+                    </td>
+                    <td class="block"></td>
+                </tr>
+                <tr>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer t2" hidden>S</p>
+                    </td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer t3" hidden>I</p>
+                    </td>
+                    <td class="block"></td>
+                </tr>
+                <tr>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer t3" hidden>T</p>
+                    </td>
+                    <td class="block"></td>
+                </tr>
+                <tr>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="block"></td>
+                    <td class="">
+                        <p class="num">6</p>
+                        <p class="answer d6" hidden>S</p>
+                    </td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer d6" hidden>A</p>
+                    </td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer d6" hidden>H</p>
+                    </td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer d6" hidden>U</p>
+                    </td>
+                    <td class="">
+                        <p class="num"></p>
+                        <p class="answer d6 t3" hidden>R</p>
+                    </td>
+                    <td class="block"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="ansCont">
+            <div class="content">
+                <div class="alert" id="salah"></div>
+                <h2>Silahkan masukan jawaban kamu, disini!</h2>
+                <select name="soal" id="soal">
+                    <option value="menurun1">1. Menurun</option>
+                    <option value="menurun2">2. Menurun</option>
+                    <option value="menurun3">3. Menurun</option>
+                    <option value="mendatar2">2. Mendatar</option>
+                    <option value="mendatar4">4. Mendatar</option>
+                    <option value="mendatar5">5. Mendatar</option>
+                    <option value="mendatar6">6. Mendatar</option>
+                </select>
+                <input type="text" name="jawaban" id="jawaban" placeholder="Masukan Jawaban..">
+                <input type="button" id="jawab" value="Submit">
+                <!-- <button id="jawab">Submit</button> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
